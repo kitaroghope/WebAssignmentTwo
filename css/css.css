@@ -78,6 +78,26 @@ body{
     min-height: 10px;
 
 }
+/* Inside the body class tag*/
+.body p{
+    width: calc(100% - 10px);
+    margin: auto;
+}
+.html,.css,.js, .txt, .info{
+    margin: 5px;
+    width: calc(100% - 10px);
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid green;
+    background: green;
+}
+.txt ol{
+    margin-left: 40px;
+}
+.txt ul{
+    margin-left: 30px;
+}
 /* gallery starts here */
 .gallery{
     margin: 5px;
@@ -91,15 +111,42 @@ body{
     width: calc(50% - 10px);
     overflow: hidden;
     display: inline-block;
-    height: 200px;
+    height: 300px;
     border-radius: 5px;
+    border: 2px solid green;
+    background: green;
+}
+.gallery .card{
+    margin: 5px auto;
+    width: calc(50% - 10px);
+    overflow: hidden;
+    display: inline-block;
+    max-height: auto;
+    border-radius: 5px;
+    border: 2px solid green;
+    background: green;
+}
+.info{
+    text-align: center;
+}
+.img{
+    min-height: 400px;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
 }
 .gallery .pic div{
     height: calc(100% - 20px);
     overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .gallery .pic img{
     max-width: 100%;
+    flex: 1;
 }
 /*Video starts here*/
 video{
@@ -112,6 +159,10 @@ video{
 hr{
     width: 90%;
     margin: 0 auto;
+}
+/* Audio tags */
+audio{
+    margin: auto;
 }
 /*@media screen and (max-width: 800px){
     *{
