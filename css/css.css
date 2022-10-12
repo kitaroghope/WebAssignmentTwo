@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(1, 65, 1);
+    height: calc(100vh - 3px);
+    max-width: 100%;
+    min-width: 480px;
+}
+.top{
+    width: 100%;
+    text-align: center;
+    height: 10%;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 20%;
+    min-width: 98px;
+    height: 80%;
+    float: left;
+    min-height: 300px;
+    background: rgb(1, 65, 1);
+    position: fixed;
+}
+.menu ul{
+    display: block;
+    height: 60%;
+    width: calc(100% - 4px);
+    margin: 2px;
+    list-style: none;
+}
+.menu ul li{
+    height: 20%;
+    min-height: 20px;
+    background: green;
+    width: calc(100% - 4px);
+    margin: 2px;
+    border-radius: 5px;
+}
+.menu ul li.active{
+    color: white;
+    background: rgb(4, 37, 4);
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+.menu ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.body{
+    width: 80%;
+    height: 90%;
+    float: right;
+    min-height: 300px;
+    background: rgb(1, 65, 1);
+    border-radius: 5px;
+}
+.cont{
+    background: rgb(4, 37, 4);
+    margin: 2px 2px 2px 0;
+    width: calc(100% - 8px);
+    min-height: calc(100% - 4px);
+    border-radius:0 5px 5px 5px;
+}
+.bottom{
+    width: 100%;
+    text-align: center;
+    min-height: 10px;
+
+}
+/* gallery starts here */
+.gallery{
+    margin: 5px;
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gallery .pic{
+    margin: 5px;
+    width: calc(50% - 10px);
+    overflow: hidden;
+    display: inline-block;
+    height: 200px;
+    border-radius: 5px;
+}
+.gallery .pic div{
+    height: calc(100% - 20px);
+    overflow: hidden;
+}
+.gallery .pic img{
+    max-width: 100%;
+}
+/*Video starts here*/
+video{
+    margin: 5px;
+    width: calc(100% - 10px);
+}
+.cont h2{
+    text-align: center;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+}
+/*@media screen and (max-width: 800px){
+    *{
+        color: black;
+    }
+}*/
