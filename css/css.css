@@ -118,7 +118,6 @@ body{
     width: calc(50% - 10px);
     overflow: hidden;
     display: inline-block;
-    height: 300px;
     border-radius: 5px;
     border: 2px solid green;
     background: green;
@@ -126,6 +125,7 @@ body{
 .gallery .card{
     margin: 5px auto;
     width: calc(50% - 10px);
+    max-width: 324px;
     overflow: hidden;
     display: inline-block;
     max-height: auto;
@@ -137,14 +137,15 @@ body{
     text-align: center;
 }
 .img{
-    min-height: 400px;
+    /*min-height: 400px;*/
     overflow: hidden;
 }
 .img img{
     width: 100%;
 }
 .gallery .pic div{
-    height: calc(100% - 20px);
+    /*height: calc(100% - 20px);*/
+    width: 100%;
     overflow: hidden;
     display: flex;
     text-align: center;
